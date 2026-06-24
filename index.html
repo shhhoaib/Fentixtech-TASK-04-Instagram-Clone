@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Profile</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- SCREEN 1: PROFILE -->
+    <div id="screen1" class="screen active">
+        <!-- Header -->
+        <header>
+            <div class="header-container">
+                <div class="header-left">
+                    <div class="logo">Instagram</div>
+                </div>
+                <div class="header-right">
+                    <button class="icon-btn" title="Add">➕</button>
+                    <button class="icon-btn" title="Menu">☰</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Profile Header Section -->
+            <section class="profile-header">
+                <!-- Username and Actions -->
+                <div class="profile-header-top">
+                    <h1 class="profile-username">sarah_photo</h1>
+                    <div class="profile-actions">
+                        <button class="action-btn" title="Edit Profile">✏️</button>
+                        <button class="action-btn" title="Options">⋯</button>
+                    </div>
+                </div>
+
+                <!-- Profile Info -->
+                <div class="profile-info">
+                    <!-- Avatar -->
+                    <div class="avatar">📸</div>
+
+                    <!-- Profile Details -->
+                    <div class="profile-details">
+                        <!-- Stats -->
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number">542</span>
+                                <span class="stat-label">Posts</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">12K</span>
+                                <span class="stat-label">Followers</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">856</span>
+                                <span class="stat-label">Following</span>
+                            </div>
+                        </div>
+
+                        <!-- Name and Bio -->
+                        <div class="profile-name">Sarah Johnson</div>
+                        <div class="profile-bio">
+                            📷 Photographer | ✈️ Travel Enthusiast
+                            <br>
+                            <a href="#" class="profile-bio-link">linktr.ee/sarah</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="profile-buttons">
+                    <button class="btn-follow">Follow</button>
+                    <button class="btn-message">Message</button>
+                </div>
+            </section>
+
+            <!-- Tabs Section -->
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab(0)">📷 Posts</button>
+                <button class="tab" onclick="switchTab(1)">🎬 Reels</button>
+                <button class="tab" onclick="switchTab(2)">❤️ Saved</button>
+                <button class="tab" onclick="switchTab(3)">👤 Tagged</button>
+            </div>
+
+            <!-- Posts Grid -->
+            <div class="posts-grid">
+                <div class="post-item">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span>❤️ 234</span>
+                            <span>💬 45</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-item alt1">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span>❤️ 567</span>
+                            <span>💬 89</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-item alt2">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span>❤️ 432</span>
+                            <span>💬 76</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-item alt3">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span>❤️ 312</span>
+                            <span>💬 54</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-item alt4">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span>❤️ 789</span>
+                            <span>💬 123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-item alt5">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span>❤️ 456</span>
+                            <span>💬 91</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-item">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span>❤️ 645</span>
+                            <span>💬 112</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-item alt1">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span>❤️ 523</span>
+                            <span>💬 88</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-item alt2">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span>❤️ 378</span>
+                            <span>💬 67</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Bottom Navigation -->
+        <footer>
+            <div class="bottom-nav">
+                <button class="nav-item active" onclick="goToScreen(1)">🏠</button>
+                <button class="nav-item" onclick="goToScreen(1)">🔍</button>
+                <button class="nav-item" onclick="goToScreen(1)">➕</button>
+                <button class="nav-item" onclick="goToScreen(1)">❤️</button>
+                <button class="nav-item" onclick="goToScreen(1)">👤</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- SCREEN 2: STORIES & HIGHLIGHTS -->
+    <div id="screen2" class="screen">
+        <!-- Header -->
+        <header>
+            <div class="header-container">
+                <div class="header-left">
+                    <div class="logo">Instagram</div>
+                </div>
+                <div class="header-right">
+                    <button class="icon-btn" title="Add">➕</button>
+                    <button class="icon-btn" title="Menu">☰</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Profile Header Section -->
+            <section class="profile-header">
+                <!-- Username and Actions -->
+                <div class="profile-header-top">
+                    <h1 class="profile-username">sarah_photo</h1>
+                    <div class="profile-actions">
+                        <button class="action-btn" title="Edit Profile">✏️</button>
+                        <button class="action-btn" title="Options">⋯</button>
+                    </div>
+                </div>
+
+                <!-- Profile Info -->
+                <div class="profile-info">
+                    <!-- Avatar -->
+                    <div class="avatar">📸</div>
+
+                    <!-- Profile Details -->
+                    <div class="profile-details">
+                        <!-- Stats -->
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number">542</span>
+                                <span class="stat-label">Posts</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">12K</span>
+                                <span class="stat-label">Followers</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">856</span>
+                                <span class="stat-label">Following</span>
+                            </div>
+                        </div>
+
+                        <!-- Name and Bio -->
+                        <div class="profile-name">Sarah Johnson</div>
+                        <div class="profile-bio">
+                            📷 Photographer | ✈️ Travel Enthusiast
+                            <br>
+                            <a href="#" class="profile-bio-link">linktr.ee/sarah</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="profile-buttons">
+                    <button class="btn-follow">Follow</button>
+                    <button class="btn-message">Message</button>
+                </div>
+            </section>
+
+            <!-- Stories Section -->
+            <section class="stories-container">
+                <div class="stories-scroll">
+                    <div class="story">
+                        <div class="story-avatar">📍</div>
+                        <div class="story-name">Paris</div>
+                    </div>
+                    <div class="story">
+                        <div class="story-avatar alt1">🏖️</div>
+                        <div class="story-name">Beach</div>
+                    </div>
+                    <div class="story">
+                        <div class="story-avatar alt2">🏔️</div>
+                        <div class="story-name">Mountains</div>
+                    </div>
+                    <div class="story">
+                        <div class="story-avatar alt3">🌃</div>
+                        <div class="story-name">City</div>
+                    </div>
+                    <div class="story">
+                        <div class="story-avatar alt4">🌅</div>
+                        <div class="story-name">Sunset</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Highlights Section -->
+            <section class="highlights-container">
+                <div class="highlights-label">HIGHLIGHTS</div>
+                <div class="highlights-scroll">
+                    <div class="highlight">
+                        <div class="highlight-circle">✨</div>
+                        <div class="highlight-name">Favorites</div>
+                    </div>
+                    <div class="highlight">
+                        <div class="highlight-circle alt1">🎨</div>
+                        <div class="highlight-name">Art</div>
+                    </div>
+                    <div class="highlight">
+                        <div class="highlight-circle alt2">🍕</div>
+                        <div class="highlight-name">Food</div>
+                    </div>
+                    <div class="highlight">
+                        <div class="highlight-circle alt3">💪</div>
+                        <div class="highlight-name">Fitness</div>
+                    </div>
+                    <div class="highlight">
+                        <div class="highlight-circle alt4">🎵</div>
+                        <div class="highlight-name">Music</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Bottom Navigation -->
+        <footer>
+            <div class="bottom-nav">
+                <button class="nav-item" onclick="goToScreen(1)">🏠</button>
+                <button class="nav-item" onclick="goToScreen(2)">🔍</button>
+                <button class="nav-item" onclick="goToScreen(1)">➕</button>
+                <button class="nav-item" onclick="goToScreen(1)">❤️</button>
+                <button class="nav-item active" onclick="goToScreen(2)">👤</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- SCREEN 3: FEED -->
+    <div id="screen3" class="screen">
+        <!-- Header -->
+        <header>
+            <div class="header-container">
+                <div class="header-left">
+                    <div class="logo">Instagram</div>
+                </div>
+                <div class="header-right">
+                    <button class="icon-btn" title="Add">➕</button>
+                    <button class="icon-btn" title="Menu">☰</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Feed Posts -->
+            <section class="feed-container">
+                <!-- Post 1 -->
+                <article class="feed-post">
+                    <div class="feed-post-header">
+                        <div class="feed-post-user">
+                            <div class="feed-avatar">📸</div>
+                            <div class="feed-user-info">
+                                <div class="feed-username">sarah_photo</div>
+                                <div class="feed-location">Paris, France</div>
+                            </div>
+                        </div>
+                        <button class="icon-btn" title="Options">⋯</button>
+                    </div>
+                    <div class="feed-post-image"></div>
+                    <div class="feed-post-actions">
+                        <button class="feed-action-btn" title="Like">❤️</button>
+                        <button class="feed-action-btn" title="Comment">💬</button>
+                        <button class="feed-action-btn" title="Share">✈️</button>
+                        <button class="feed-action-btn" title="Save" style="margin-left: auto;">📌</button>
+                    </div>
+                    <div class="feed-post-caption">
+                        <span class="feed-username-inline">sarah_photo</span> Beautiful sunset over the Eiffel Tower ✨
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="feed-post">
+                    <div class="feed-post-header">
+                        <div class="feed-post-user">
+                            <div class="feed-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">📷</div>
+                            <div class="feed-user-info">
+                                <div class="feed-username">john_travel</div>
+                                <div class="feed-location">Tokyo, Japan</div>
+                            </div>
+                        </div>
+                        <button class="icon-btn" title="Options">⋯</button>
+                    </div>
+                    <div class="feed-post-image alt1"></div>
+                    <div class="feed-post-actions">
+                        <button class="feed-action-btn" title="Like">❤️</button>
+                        <button class="feed-action-btn" title="Comment">💬</button>
+                        <button class="feed-action-btn" title="Share">✈️</button>
+                        <button class="feed-action-btn" title="Save" style="margin-left: auto;">📌</button>
+                    </div>
+                    <div class="feed-post-caption">
+                        <span class="feed-username-inline">john_travel</span> Amazing street food experience! 🍜
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="feed-post">
+                    <div class="feed-post-header">
+                        <div class="feed-post-user">
+                            <div class="feed-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">🎨</div>
+                            <div class="feed-user-info">
+                                <div class="feed-username">emma_artist</div>
+                                <div class="feed-location">New York, USA</div>
+                            </div>
+                        </div>
+                        <button class="icon-btn" title="Options">⋯</button>
+                    </div>
+                    <div class="feed-post-image alt2"></div>
+                    <div class="feed-post-actions">
+                        <button class="feed-action-btn" title="Like">❤️</button>
+                        <button class="feed-action-btn" title="Comment">💬</button>
+                        <button class="feed-action-btn" title="Share">✈️</button>
+                        <button class="feed-action-btn" title="Save" style="margin-left: auto;">📌</button>
+                    </div>
+                    <div class="feed-post-caption">
+                        <span class="feed-username-inline">emma_artist</span> New art installation in the gallery! 🎭
+                    </div>
+                </article>
+
+                <!-- Post 4 -->
+                <article class="feed-post">
+                    <div class="feed-post-header">
+                        <div class="feed-post-user">
+                            <div class="feed-avatar" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">⛰️</div>
+                            <div class="feed-user-info">
+                                <div class="feed-username">mike_hiker</div>
+                                <div class="feed-location">Colorado, USA</div>
+                            </div>
+                        </div>
+                        <button class="icon-btn" title="Options">⋯</button>
+                    </div>
+                    <div class="feed-post-image"></div>
+                    <div class="feed-post-actions">
+                        <button class="feed-action-btn" title="Like">❤️</button>
+                        <button class="feed-action-btn" title="Comment">💬</button>
+                        <button class="feed-action-btn" title="Share">✈️</button>
+                        <button class="feed-action-btn" title="Save" style="margin-left: auto;">📌</button>
+                    </div>
+                    <div class="feed-post-caption">
+                        <span class="feed-username-inline">mike_hiker</span> Hiking adventure to Rocky Mountain peaks! 🏔️
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!-- Bottom Navigation -->
+        <footer>
+            <div class="bottom-nav">
+                <button class="nav-item" onclick="goToScreen(3)">🏠</button>
+                <button class="nav-item" onclick="goToScreen(1)">🔍</button>
+                <button class="nav-item" onclick="goToScreen(1)">➕</button>
+                <button class="nav-item" onclick="goToScreen(1)">❤️</button>
+                <button class="nav-item" onclick="goToScreen(1)">👤</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript for Screen Navigation -->
+    <script>
+        function goToScreen(screenNumber) {
+            // Hide all screens
+            document.querySelectorAll('.screen').forEach(screen => {
+                screen.classList.remove('active');
+            });
+
+            // Show selected screen
+            if (screenNumber === 1) {
+                document.getElementById('screen1').classList.add('active');
+            } else if (screenNumber === 2) {
+                document.getElementById('screen2').classList.add('active');
+            } else if (screenNumber === 3) {
+                document.getElementById('screen3').classList.add('active');
+            }
+        }
+
+        function switchTab(tabIndex) {
+            console.log('Tab switched to:', tabIndex);
+            // Add tab switching functionality
+        }
+    </script>
+</body>
+</html>
