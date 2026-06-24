@@ -1,7 +1,5 @@
 {
-  "buildCommand": "",
   "framework": "html",
-  "public": ".",
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
